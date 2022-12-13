@@ -2,7 +2,7 @@
 
 ## Project: Event Driven Applications - CAPS
 
-### Author: Hunter Fehr
+### Author: Trace Dugar
 
 ### Problem Domain 
 CAPS will simulate a delivery service where vendors are notified of every step of the process, such as , pickup, in transit, and delivery.  It will notify the driver of pending pickups/
@@ -30,4 +30,9 @@ CAPS will simulate a delivery service where vendors are notified of every step o
   - 
   - 
 #### UML
-![UML](assets/CAPS_UML.jpg)
+![UML](assets/CAPS_UML_CORRECT.jpg)
+
+//---Collaboration Hunter Fehr
+
+//--reference class buildout for lab 11
+
