@@ -4,9 +4,9 @@ const eventPool = require('../eventPool');
 const Chance = require('chance');
 const chance = new Chance();
 
-function generateOrder() {
+function generateOrder(payload = null) {
   payload = payload ? payload : {
-    store: '1-206-flowers',
+    store: chance.company(),
     orderId: chance.guid(),
     customer: chance.name(),
     address: chance.address(),
@@ -17,7 +17,7 @@ function generateOrder() {
 }
 
 function thankDriver(payload) {
-  console.log('Vendor: Thanks for delivered to: ', payload.customer);
+  console.log('Vendor: Thanks for delivering to: ', payload.customer);
 }
 
 module.exports = { generateOrder, thankDriver };
