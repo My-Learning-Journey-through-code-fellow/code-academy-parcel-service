@@ -9,11 +9,8 @@ CAPS will simulate a delivery service where vendors are notified of every step o
 
 ### Links and Resources
 - [CAPS](https://github.com/TraceDugar/code-academy-parcel-service/actions/new) (GitHub Actions)
-<!-- ### Setup -->
-<!-- #### `.env` requirements -->
-<!-- see `.env.sample` -->
-<!-- - PORT: 3001 -->
-<!-- #### How to initialize/run your application -->
+
+
 -
 #### Features / Routes
 - Feature One: create event emiter
@@ -33,6 +30,9 @@ CAPS will simulate a delivery service where vendors are notified of every step o
 ![UML](assets/CAPS_UML_CORRECT.jpg)
 
 //---Collaboration Hunter Fehr
-
 //--reference class buildout for lab 11
+
+______________________________________________________
+
+Begin Refactor - 12/13/22
 
