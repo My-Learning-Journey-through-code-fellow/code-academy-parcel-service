@@ -1,15 +1,18 @@
 'use strict';
 
-const eventPool = require('../eventPool');
+const { io } = require('socket.io-client');
+const socket = io('http://localhost:3001/caps');
 
-function pickUpInTransit(payload) {
+
+
+const pickUpInTransit  = (socket) => (payload) => {
   console.log('Driver: recieved order: ', payload.orderId);
-  eventPool.emit('IN_TRANSIT', payload);
-}
+  socket.emit('IN_TRANSIT', payload);
+};
 
-function deliveryHandler(payload) {
+const deliveryHandler = (socket) => (payload) => {
   console.log('Driver: Delivered order: ', payload.orderId);
-  eventPool.emit('DELIVERED', payload);
-}
+  socket.emit('DELIVERED', payload);
+};
 
 module.exports = { pickUpInTransit, deliveryHandler };
